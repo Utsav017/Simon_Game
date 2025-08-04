@@ -8,20 +8,34 @@ h5 {
 /* Container for the four colored buttons */
 .container {
     display: grid;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(2, minmax(150px, 200px));
+    grid-template-columns: repeat(2, minmax(150px, 200px));
     row-gap: 40px;
     column-gap: 40px;
     justify-content: center;
+    padding: 40px;
 }
 
 /* General button style */
 .color {
-    height: 200px;
-    /* FIXED: was '200x', corrected */
-    width: 200px;
+    height: 100%;
+    width: 100%;
     border: 10px solid black;
     border-radius: 20%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: repeat(2, minmax(100px, 150px));
+        grid-template-columns: repeat(2, minmax(100px, 150px));
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    
+    .color {
+        border-width: 5px;
+    }
 }
 
 /* Individual button colors */
