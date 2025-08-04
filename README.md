@@ -39,4 +39,4 @@ The goal is simple: **repeat the sequence of lights** as it gets progressively l
 
 ---
 
-**Created by:** [Shivansh Gupta](www.linkedin.com/in/shivansh-gupta017)  
+**Created by:** [Shivansh Gupta](https://www.linkedin.com/in/shivansh-gupta017/)  
