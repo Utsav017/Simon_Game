@@ -63,3 +63,19 @@ h5 {
 .userflash {
     background-color: white !important;
 }
+.start-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4BE875;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.start-button:hover {
+    background-color: #3da75f;
+}

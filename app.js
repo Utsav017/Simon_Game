@@ -1,7 +1,20 @@
 // Arrays to store the game's sequence and the user's sequence
 let gameSeq = [];
 let userSeq = [];
+// Add this near the top with other selections
+let startBtn = document.querySelector("#start-btn");
 
+// Modify the existing keypress listener and add button listener
+document.addEventListener("keypress", startGame);
+startBtn.addEventListener("click", startGame);
+
+// Create a separate function for starting the game
+function startGame() {
+  if (started == false) {
+    started = true;
+    levelup();
+  }
+}
 // Available button colors
 let btns = ["yellow", "red", "blue", "green"];
 
@@ -18,15 +31,6 @@ let highScore = localStorage.getItem("highScore")
 let h2 = document.querySelector("h2");
 let highScoreDisplay = document.querySelector("#high-score");
 highScoreDisplay.innerText = `High Score: ${highScore}`;
-
-// Listen for any key press to start the game
-document.addEventListener("keypress", function () {
-  if (started == false) {
-    // Start only if not already started
-    started = true;
-    levelup(); // Begin the first level
-  }
-});
 
 // Adds a "flash" animation to a button (for game sequence)
 function gameFlash(btn) {
