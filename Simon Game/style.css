@@ -1,0 +1,51 @@
+/* Centering titles */
+h1,
+h2,
+h5 {
+    text-align: center;
+}
+
+/* Container for the four colored buttons */
+.container {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    row-gap: 40px;
+    column-gap: 40px;
+    justify-content: center;
+}
+
+/* General button style */
+.color {
+    height: 200px;
+    /* FIXED: was '200x', corrected */
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+}
+
+/* Individual button colors */
+#red {
+    background-color: #FF7362;
+}
+
+#blue {
+    background-color: #2DEDFF;
+}
+
+#green {
+    background-color: #4BE875;
+}
+
+#yellow {
+    background-color: #fde846;
+}
+
+/* Flash effects */
+.flash {
+    background-color: black !important;
+}
+
+.userflash {
+    background-color: white !important;
+}
