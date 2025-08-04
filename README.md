@@ -19,11 +19,11 @@ The goal is simple: **repeat the sequence of lights** as it gets progressively l
    - The **high score** will update if you beat your previous best.
 
 ## File Structure
-.
+```
 ├── index.html # Main HTML structure
 ├── style.css # Styling for layout and animations
 ├── app.js # Game logic and interactions
-
+```
 ## Screenshots
 ![Gameplay Screenshot](screenshot.png)  
 
@@ -39,4 +39,4 @@ The goal is simple: **repeat the sequence of lights** as it gets progressively l
 
 ---
 
-**Created by:** [Shivansh Gupta]  
+**Created by:** [Shivansh Gupta](www.linkedin.com/in/shivansh-gupta017)  
