@@ -64,8 +64,8 @@ h5 {
     background-color: white !important;
 }
 .start-button {
-    display: block;
-    margin: 20px auto;
+    display: inline-block;
+    margin: 0;
     padding: 10px 20px;
     font-size: 1.2rem;
     background-color: #4BE875;
@@ -78,4 +78,26 @@ h5 {
 
 .start-button:hover {
     background-color: #3da75f;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.rules-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #2DEDFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rules-button:hover {
+    background-color: #25b6c4;
 }
